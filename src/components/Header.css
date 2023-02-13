@@ -1,0 +1,33 @@
+.container-fluid {
+  padding: 1.5em;
+  background-image: url("../assets/pokeball.png");
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; */
+  background-size: cover 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.title {
+  flex-direction: column;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.mb-0 {
+  display: flex;
+}
+
+.form-control {
+  margin-right: 5px;
+}
+
+img.container {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

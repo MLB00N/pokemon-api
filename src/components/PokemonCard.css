@@ -1,0 +1,207 @@
+* {
+  font-family: "Lato", sans-serif;
+  font-stretch: ultra-condensed;
+}
+
+.card {
+  border: 10px solid gold;
+  border-radius: 20px;
+  width: 300px;
+  padding: 5px 10px 5px 10px;
+}
+
+.grass-type {
+  background: linear-gradient(
+    to bottom right,
+    #aae5b7,
+    #78cf8b,
+    #4fb665,
+    #319d49,
+    #4fb665,
+    #78cf8b
+  );
+}
+
+.water-type {
+  background: linear-gradient(
+    to bottom right,
+    #d9e4ec,
+    #adc1d1,
+    #7d99af,
+    #557792,
+    #7d99af,
+    #adc1d1
+  );
+}
+
+.electric-type {
+  background: linear-gradient(
+    to bottom right,
+    #ffffa4,
+    #fff870,
+    #fff200,
+    #fff870,
+    #ffffa4,
+    #fff870
+  );
+}
+
+.fire-type {
+  background: linear-gradient(
+    to bottom right,
+    #ffbfba,
+    #ff978f,
+    #ff756b,
+    #ff594c,
+    #ff756b,
+    #ff978f
+  );
+}
+
+.poison-type {
+  background: linear-gradient(
+    to bottom right,
+    #612b9e,
+    #8a35b0,
+    #db22ee,
+    #8915a1,
+    #ba21e1,
+    #5b1fbd
+  );
+}
+
+.normal-type {
+  background: linear-gradient(
+    to bottom right,
+    #d99e1c,
+    #c68f1e,
+    #aa7b19,
+    #d9a22b,
+    #bf8819,
+    #ac750c
+  );
+}
+
+.basic {
+  font-size: 9px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+
+.nameheaders {
+  width: -webkit-fill-available;
+}
+
+.nameofanimal {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  width: 120px;
+  text-align: left;
+}
+
+.hp {
+  color: crimson;
+  font-size: 18px;
+  text-align: right;
+  font-weight: 600;
+  width: 150px;
+}
+
+img.card-img-top {
+  padding: 0px;
+  margin: 0px;
+  border: 5px yellow outset;
+  box-shadow: 3px 3px 10px #000;
+}
+
+.card-body {
+  height: 175px;
+  padding: 0;
+  display: grid;
+}
+
+hr {
+  margin: 0.25rem 0;
+}
+
+.description {
+  padding: 2px 0px 0px 0px;
+  margin: 0px 0px 5px 0px;
+  background: linear-gradient(to right, goldenrod, yellow, goldenrod);
+  font-size: 11px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+.py-4 {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0 0 !important;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.symbolWrapper {
+  display: flex;
+}
+
+td.energy {
+  width: 18%;
+  font-size: 20px;
+  text-align: center;
+}
+
+td.damage {
+  font-weight: bold;
+  text-align: right;
+}
+
+span.labeltext {
+  font-size: 11px;
+}
+
+span.label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+td.attack {
+  line-height: 13px;
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+table.costs {
+  font-size: 11px;
+  text-align: center;
+  width: 100%;
+}
+
+tr.costheaders {
+  font-weight: bold;
+}
+
+tr.costicons {
+  font-size: 20px;
+}
+
+p.italicize {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 11px;
+  border: 3px solid gold;
+  border-radius: 6px;
+  margin: 0px;
+  padding: 5px;
+  text-align: center;
+  line-height: 10px;
+}
