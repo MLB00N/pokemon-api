@@ -1,9 +1,6 @@
 .container-fluid {
   padding: 1.5em;
   background-image: url("../assets/pokeball.png");
-  /* -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover; */
   background-size: cover 100%;
   background-repeat: no-repeat;
   background-position: center;

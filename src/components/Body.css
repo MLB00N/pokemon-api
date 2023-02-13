@@ -23,4 +23,29 @@ btn.disabled {
 
 .pagination {
   margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+.pageSelector {
+  display: -webkit-inline-box;
+}
+
+input {
+  margin-left: 10px;
+  max-width: 70px;
+  margin-right: 0px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+.outOfScope {
+  background-image: url("../assets/backgroundImg.jpg");
+  height: 125vh;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

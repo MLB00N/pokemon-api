@@ -1,3 +1,4 @@
+import { offset } from "@popperjs/core";
 import useSWR from "swr";
 import { Attack } from "./Attack";
 import Description from "./Description";
@@ -100,11 +101,20 @@ export default function PokemonCard({ pokeName }: PokemonCardProps) {
               src="https://heatherketten.files.wordpress.com/2018/03/nrg_leaf.png"
               width="20"
               height="20"
+              alt="leaf"
             />
           </tr>
         </table>
 
-        <img src={data.sprites} className="card-img-top" alt="Pokemon Img" />
+        <img
+          src={
+            data.sprites !== null
+              ? data.sprites
+              : "https://www.freepnglogos.com/uploads/pok-mon-go-logo-png-30.png"
+          }
+          className="card-img-top"
+          alt="Pokemon Img"
+        />
         <div className="description">
           Type: {data.types.map((entry) => entry.type.name).join(", ")} /
           Heigth: {data.height / 10}m / Weight: {data.weight / 10}kg
@@ -126,6 +136,7 @@ export default function PokemonCard({ pokeName }: PokemonCardProps) {
                   src="https://heatherketten.files.wordpress.com/2018/03/nrg_fire.png"
                   width="20"
                   height="20"
+                  alt="fire"
                 />
               </td>
               <td></td>
@@ -134,6 +145,7 @@ export default function PokemonCard({ pokeName }: PokemonCardProps) {
                   src="https://heatherketten.files.wordpress.com/2018/03/nrg_normal.png"
                   width="20"
                   height="20"
+                  alt="normal"
                 />
               </td>
             </tr>

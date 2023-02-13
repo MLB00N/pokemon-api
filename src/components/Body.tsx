@@ -53,8 +53,31 @@ export function Body() {
     }
   };
 
+  const jumpToPage = (page: number) => {
+    if (page > 0) {
+      setOffset(page * 8 - 8);
+    }
+  };
+
   if (error) return <div>Failed to load Pokemon name</div>;
   if (!data) return <div>Loading...</div>;
+  if (offset > 159 * 8)
+    return (
+      <div className="outOfScope">
+        <div>
+          <p className="h1">Oooops, you went too far!</p>
+          <button
+            onClick={() => {
+              setOffset(0);
+            }}
+            className="btn btn-primary"
+          >
+            {" "}
+            Go Back
+          </button>{" "}
+        </div>
+      </div>
+    );
 
   return (
     <div className="wrapper">
@@ -106,6 +129,29 @@ export function Body() {
             <button onClick={goToNextPage} className="page-link">
               Next
             </button>
+          </li>
+        </ul>
+        <ul className="pagination">
+          <li className="page-item">
+            <form
+              onSubmit={(event) => {
+                event.preventDefault();
+                const inputElement = event.currentTarget.elements.item(
+                  0
+                ) as HTMLInputElement;
+                console.log("inputElement", inputElement);
+
+                const inputValue = Number(inputElement.value);
+                console.log("inputValue", inputValue);
+                console.log("offset", offset);
+                jumpToPage(inputValue);
+              }}
+            >
+              <span className="form-group pageSelector">
+                <label htmlFor="jumpToPage">Jump to page: </label>
+                <input type="number" className="form-control" id="jumpToPage" />
+              </span>
+            </form>
           </li>
         </ul>
       </nav>
